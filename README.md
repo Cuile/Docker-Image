@@ -1,5 +1,5 @@
 # Python-Dev-Env
-Python标准开发环境
+Python常用开发环境
 
 ## 镜像说明
 修改了系统时区，默认为北京时间 CTS +8
