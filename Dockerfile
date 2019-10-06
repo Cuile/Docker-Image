@@ -12,7 +12,7 @@ RUN pip install --no-cache-dir \
 			# 打包可执行文件库
 			PyInstaller==3.4 \
 			# 程序进度条库
-			progressbar==2.5\ 
+			progressbar==2.5 \ 
 			# 数据库连接库
 			mysql-connector-python==8.0.12 \
 			psycopg2==2.8.3 \
