@@ -26,6 +26,10 @@ Python常用开发环境
 ### 读取配置文件
 - pyhocon = 0.3.50
 
+### PyPi发布工具
+- travis-encrypt = latest
+- twine = latest
+
 ## 使用方法
 ```bash
 docker run --rm -it python-dev-env:latest
