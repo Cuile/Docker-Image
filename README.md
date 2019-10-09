@@ -30,6 +30,10 @@ Python常用开发环境
 - travis-encrypt = latest
 - twine = latest
 
+### Python调试工具
+- better-exceptions = latest
+- PySnooper = latest
+
 ## 使用方法
 ```bash
 docker run --rm -it python-dev-env:latest

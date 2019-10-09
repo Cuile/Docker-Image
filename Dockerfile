@@ -20,7 +20,10 @@ RUN pip install --no-cache-dir \
 	pyhocon==0.3.50 \
 	# PyPi发布工具
 	travis-encrypt \
-	twine
+	twine \
+	# Python调试工具
+	better-exceptions \
+	PySnooper
 
 # 设置shell
 RUN echo "export PS1='[\A \u@\H \w]\\$ '" >> $HOME/.bashrc \
