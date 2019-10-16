@@ -34,6 +34,9 @@ Python常用开发环境
 - better-exceptions = latest
 - PySnooper = latest
 
+### 网络请求
+- requests = 2.21.0
+
 ## 使用方法
 ```bash
 docker run --rm -it python-dev-env:latest

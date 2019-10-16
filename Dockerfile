@@ -23,7 +23,9 @@ RUN pip install --no-cache-dir \
 	twine \
 	# Python调试工具
 	better-exceptions \
-	PySnooper
+	PySnooper \
+	# 网络请求库
+	requests==2.21.0
 
 # 设置shell
 RUN echo "export PS1='[\A \u@\H \w]\\$ '" >> $HOME/.bashrc \
