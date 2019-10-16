@@ -39,5 +39,5 @@ Python常用开发环境
 
 ## 使用方法
 ```bash
-docker run --rm -it python-dev-env:latest
+docker run --rm -it cuile/python-dev-env:latest
 ```
