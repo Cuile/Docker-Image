@@ -22,8 +22,9 @@ RUN pip install --no-cache-dir \
 	# Python调试工具
 	better-exceptions \
 	PySnooper \
-	# 代码美化工具
+	# 代码工具
 	black \
+	pylint \
 	# 打包可执行文件库
 	PyInstaller==3.4 \
 	# PyPi发布工具
