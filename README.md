@@ -14,8 +14,8 @@
 
 ### 系统库
 
-- pip = latest
-- setuptools = latest
+- pip = 19.3.1
+- setuptools = 41.6.0
 
 ### 打包可执行文件
 
