@@ -36,13 +36,13 @@
 
 ### PyPi发布工具
 
-- travis-encrypt = latest
-- twine = latest
+- travis-encrypt = 1.3.1
+- twine = 2.0.0
 
 ### Python调试工具
 
-- better-exceptions = latest
-- PySnooper = latest
+- better-exceptions = 0.2.2
+- PySnooper = 0.2.8
 
 ### 网络请求
 
