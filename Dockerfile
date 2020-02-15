@@ -2,7 +2,7 @@ FROM python:3.7
 
 # 修改时区
 ENV TZ=Asia/Shanghai
-RUN ln -snf /usr/share/zoneinfo/${TZ} /etc/localtime && echo ${TZ} > /etc/timezome
+RUN ln -snf /usr/share/zoneinfo/${TZ} /etc/localtime && echo ${TZ} > /etc/timezone
 
 # 升级自带安装工具
 RUN pip install --no-cache-dir --upgrade pip \
