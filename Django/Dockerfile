@@ -8,6 +8,9 @@ RUN ln -snf /usr/share/zoneinfo/${TZ} /etc/localtime && echo ${TZ} > /etc/timezo
 RUN pip install --no-cache-dir --upgrade pip \
 	&& pip install --no-cache-dir --upgrade setuptools
 
+# pip换国内清华的源
+RUN pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
 # 安装Python库
 RUN pip install --no-cache-dir \
     # Django库
