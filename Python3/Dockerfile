@@ -1,4 +1,4 @@
-FROM python:3.7
+FROM python:3.7-buster
 
 # 修改时区
 ENV TZ=Asia/Shanghai
