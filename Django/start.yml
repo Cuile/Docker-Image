@@ -1,0 +1,22 @@
+version: "3.7"
+services:
+  django:
+    image: django-3.2.13:latest
+    container_name: my-django-app
+    ports:
+      - "80:80"
+    volumes:
+      - $PWD/app:/usr/src/app:rw
+    working_dir: /usr/src/app
+    restart: always
+    # networks:
+    #   reverse-proxy:
+    #     aliases:
+    #       - django
+    # 添加tty配置，阻断系统自动重启的进程
+    tty: true
+
+# networks:
+#   reverse-proxy:
+#     name: reverse-proxy
+    

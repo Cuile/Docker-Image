@@ -25,11 +25,14 @@
 
 ```bash
 # 构建镜像
-$ docker build -t django-3.2.13 .
+$ docker build --compress -f Dockerfile -t django-3.2.13 .
 
 # 启动镜像
-$ 
+$ docker compose -f ./start.yml up -d
+$ docker compose -f ./start.yml down
 
-# 使用镜像
-$ docker run -it --rm --name myapp django-3.2.13
+# 创建项目
+$ docker exec -it my-django-app django-admin.py startproject mysite
+# 启动项目
+$ docker exec -it -d my-django-app python ./mysite/manage.py runserver 0.0.0.0:80
 ```
