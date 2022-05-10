@@ -24,5 +24,12 @@
 ## 使用方法
 
 ```bash
-docker run --rm -it cuile/python-dev-env:latest
+# 构建镜像
+$ docker build -t django-3.2.13 .
+
+# 启动镜像
+$ 
+
+# 使用镜像
+$ docker run -it --rm --name myapp django-3.2.13
 ```
