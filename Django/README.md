@@ -32,7 +32,11 @@ $ docker compose -f ./start.yml up -d
 $ docker compose -f ./start.yml down
 
 # 创建项目
-$ docker exec -it my-django-app django-admin.py startproject mysite
+$ docker exec -it my-django-app bash -c "django-admin.py startproject mysite"
+$ docker exec -it -d my-django-app bash -c "cd mysite && python ./manage.py startapp websrc"
 # 启动项目
-$ docker exec -it -d my-django-app python ./mysite/manage.py runserver 0.0.0.0:80
+$ docker exec -it -d my-django-app bash -c "cd mysite && python ./manage.py runserver 0.0.0.0:80"
+
+# 进入项目调试
+docker exec -it my-django-app /bin/bash
 ```
