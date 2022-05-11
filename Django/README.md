@@ -38,5 +38,5 @@ $ docker exec -it -d my-django-app bash -c "cd mysite && python ./manage.py star
 $ docker exec -it -d my-django-app bash -c "cd mysite && python ./manage.py runserver 0.0.0.0:80"
 
 # 进入项目调试
-docker exec -it my-django-app /bin/bash
+$ docker exec -it my-django-app /bin/bash
 ```
