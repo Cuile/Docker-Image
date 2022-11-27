@@ -2,41 +2,32 @@
 
 ## 1. 镜像说明
 
-- 基于python:3.9.12-buster镜像
-- 集成了Django库。
+- 基于python:3.11.0-buster镜像
 
 ## 2. 系统说明
 
 - 修改系统时区，为北京时间 CTS +8
 - 修改提示符，显示当前时间、路径
 
-## 3. 可用库说明
-
-### 3.1. 自带库
-
-- pip = 19.3.1
-- setuptools = 41.6.0
-
-### 3.2. Django
+### 2.1. Django库
 
 - Django==3.2.13(LTS)
+- django-simpleui==2022.11.30
 
-## 4. 使用方法
+## 3. 使用方法
 
 ```bash
-# 构建镜像
-$ docker build --compress -f Dockerfile -t django-3.2.13 .
-
 # 启动镜像
-$ docker compose -f ./start.yml up -d
-$ docker compose -f ./start.yml down
+$ bash up.sh
 
-# 创建项目
-$ docker exec -it my-django-app bash -c "django-admin.py startproject mysite"
-$ docker exec -it -d my-django-app bash -c "cd mysite && python ./manage.py startapp websrc"
-# 启动项目
-$ docker exec -it -d my-django-app bash -c "cd mysite && python ./manage.py runserver 0.0.0.0:80"
+# 启动Django
+$ bash run_server.sh
 
-# 进入项目调试
-$ docker exec -it my-django-app /bin/bash
+# 调试项目
+$ bash login_server.sh
+
+# 关闭镜像
+$ bash down.sh
 ```
+
+详细内容请访问[这里](https://blog.cuile.com/series/django/)
