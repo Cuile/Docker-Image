@@ -3,7 +3,7 @@ ARG TAG=3.9-buster
 
 FROM ${IMAGE}:${TAG}
 
-LABEL Author="Cuile" Email="i@cuile.com"
+LABEL Author="Cuile" Email="i@cuile.com" Version=${IMAGE}:${TAG}
 
 # 修改时区
 ENV TZ=Asia/Shanghai

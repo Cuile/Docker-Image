@@ -1,4 +1,6 @@
-FROM python:base
+ARG IMAGE=python
+
+FROM cuile/${IMAGE}:base
 
 # 安装Python库
 COPY ./requirements.txt /tmp/requirements.txt
