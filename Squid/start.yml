@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  squid:
+    image: ubuntu/squid:5.2-22.04_beta
+    container_name: squid
+    ports:
+      - "3128:3128"
+    volumes:
+      - ./conf/squid.conf:/etc/squid/squid.conf:ro
+      - ./conf/squid_passwd:/etc/squid/squid_passwd:ro
+    restart: always
+    

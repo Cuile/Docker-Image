@@ -1,0 +1,19 @@
+version: "3.7"
+services:
+  frpc:
+    image: snowdreamtech/frpc:0.43.0
+    container_name: frpc
+    ports:
+      - "80:80"
+    volumes:
+      - ./conf/home.frpc.ini:/etc/frp/frpc.ini
+    restart: always
+    networks:
+      frp-proxy:
+        aliases:
+          - frpc
+
+networks:
+  frp-proxy:
+    name: frp-proxy
+    
