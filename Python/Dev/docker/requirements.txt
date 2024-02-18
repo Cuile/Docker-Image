@@ -1,6 +1,6 @@
 # requirements.txt
 
-# Python调试工具
+# 代码调试工具
 PySnooper==1.2.0
 
 # 打包可执行文件库
