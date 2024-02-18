@@ -1,29 +1,24 @@
 # requirements.txt
 
-# 程序进度条库
-progressbar==2.5
-
-# 数据库连接库
-mysql-connector-python==8.0.12
-psycopg2==2.8.3
-
-# 网络请求库
-requests==2.21.0
-
-# 配置文件读取
-pyhocon==0.3.50
-
 # Python调试工具
-better-exceptions
-PySnooper
-
-# 代码工具
-black
-pylint
+PySnooper==1.2.0
 
 # 打包可执行文件库
-PyInstaller==3.4
+#PyInstaller==3.4
 
 # PyPi发布工具
-travis-encrypt
-twine 
+#travis-encrypt
+#twine 
+
+# 程序进度条库
+#progressbar==2.5
+
+# 数据库连接库
+#mysql-connector-python==8.0.12
+#psycopg2==2.8.3
+
+# 网络请求库
+#requests==2.21.0
+
+# 配置文件读取
+#pyhocon==0.3.50
