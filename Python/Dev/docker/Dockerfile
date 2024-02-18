@@ -1,6 +1,6 @@
 ARG IMAGE=python
 
-FROM cuile/${IMAGE}:base
+FROM cuile/${IMAGE}_base
 
 # 安装Python库
 COPY ./requirements.txt /tmp/requirements.txt
