@@ -16,3 +16,5 @@ RUN echo "PS1='\[\e[36;40m\][\D{%Y-%m-%d} \A] \[\e[0m\] \[\e[35;40m\]\w\[\e[0m\]
 RUN pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple && \
 	pip install --no-cache-dir --upgrade pip && \
 	pip install --no-cache-dir --upgrade setuptools
+
+CMD [""]
