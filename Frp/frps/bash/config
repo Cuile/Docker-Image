@@ -1,5 +1,0 @@
-_bind_port='7000'
-_dashboard_port='7070'
-_http_port='80'
-_https_port='443'
-_allow_ports='8000:8030'
